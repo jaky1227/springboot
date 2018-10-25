@@ -18,6 +18,7 @@ public class CustomFilter implements Filter {
 
         log.info("Filter 1 : doFilter 请求处理");
         filterChain.doFilter(servletRequest,servletResponse);
+        log.info("Filter 1 After Filter chain");
     }
 
     @Override

@@ -17,6 +17,7 @@ public class FilterTwo implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         log.info("Filter 2 : doFilter 请求处理");
         filterChain.doFilter(servletRequest,servletResponse);
+        log.info("Filter 2 After Filter chain");
     }
 
     @Override
