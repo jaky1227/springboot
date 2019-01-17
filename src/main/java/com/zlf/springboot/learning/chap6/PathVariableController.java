@@ -22,4 +22,9 @@ public class PathVariableController {
     public String param(@RequestParam("id") String id){
         return "id:"+id;
     }
+
+    @GetMapping("/mock")
+    public String demo(String msg){
+        return msg;
+    }
 }
